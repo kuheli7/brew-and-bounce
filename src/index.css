@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* Palette and type are taken from the Brew & Bounce mock. Retheme a new shop by editing these tokens. */
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+
+  --color-cream: oklch(0.978 0.019 68);
+  --color-ink: oklch(0.23 0.034 48);
+  --color-ink-soft: oklch(0.45 0.03 48);
+  --color-sand: oklch(0.93 0.03 68);
+  --color-paper: oklch(1 0 0);
+  --color-berry: oklch(0.685 0.219 17);
+  --color-berry-deep: oklch(0.55 0.2 17); /* berry for small text on cream (passes contrast) */
+  --color-citrus: oklch(0.855 0.166 86);
+  --color-teal: oklch(0.71 0.145 180);
+  --color-grape: oklch(0.71 0.16 309);
+
+  --shadow-pop-sm: 3px 3px 0 var(--color-ink);
+  --shadow-pop: 5px 5px 0 var(--color-ink);
+  --shadow-pop-lg: 7px 7px 0 var(--color-ink);
+
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-rise: rise 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+  --animate-wiggle: wiggle 2.4s ease-in-out infinite;
+  --animate-pop: pop 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+
+  @keyframes marquee {
+    to { transform: translateX(-50%); }
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-4deg) translateY(0); }
+    50% { transform: rotate(3deg) translateY(-6px); }
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: scale(0.6); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--color-grape); outline-offset: 3px; }
+  .font-display { font-variation-settings: "SOFT" 100, "opsz" 144; letter-spacing: -0.015em; }
+  ::selection { background: var(--color-citrus); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+}
+
+@layer components {
+  /* Buttons: chunky outline + hard shadow that "presses" on tap */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-ink font-black leading-none whitespace-nowrap select-none transition duration-150 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-pop {
+    box-shadow: 4px 4px 0 var(--color-ink);
+  }
+  .btn-pop:not(:disabled):hover { transform: translate(-1px, -2px); box-shadow: 6px 7px 0 var(--color-ink); }
+  .btn-pop:not(:disabled):active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--color-ink); }
+  .btn-berry { @apply bg-berry text-cream; }
+  .btn-dark { @apply bg-ink text-cream; }
+  .btn-light { @apply bg-cream text-ink; }
+  .btn-citrus { @apply bg-citrus text-ink; }
+
+  .chip {
+    @apply inline-block rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-widest text-ink;
+  }
+
+  .field {
+    @apply w-full rounded-2xl border-2 border-ink bg-paper px-4 py-3 font-bold text-ink placeholder:font-semibold placeholder:text-ink/40;
+  }
+}
+
+/* Hide the scrollbar on horizontally scrolling pill rows */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
