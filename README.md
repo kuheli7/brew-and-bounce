@@ -10,9 +10,10 @@
 
 <table>
   <tr>
-    <td align="center"><img src="docs/screenshots/m-home.jpg" width="260" alt="Home page on a phone"><br><sub><b>Home</b></sub></td>
-    <td align="center"><img src="docs/screenshots/m-menu.jpg" width="260" alt="Menu page on a phone"><br><sub><b>Menu</b></sub></td>
-    <td align="center"><img src="docs/screenshots/m-order.jpg" width="260" alt="Order page on a phone"><br><sub><b>Your order</b></sub></td>
+    <td align="center"><img src="docs/screenshots/m-home.png" width="200" alt="Home page on a phone"><br><sub><b>Home</b></sub></td>
+    <td align="center"><img src="docs/screenshots/m-menu-band.png" width="200" alt="Category picker on the home page"><br><sub><b>Pick a category</b></sub></td>
+    <td align="center"><img src="docs/screenshots/m-menu.png" width="200" alt="Menu page on a phone"><br><sub><b>Full menu</b></sub></td>
+    <td align="center"><img src="docs/screenshots/m-summary.png" width="200" alt="Order summary on a phone"><br><sub><b>Order &amp; WhatsApp</b></sub></td>
   </tr>
 </table>
 
