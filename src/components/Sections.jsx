@@ -116,13 +116,24 @@ export function Visit() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-3xl border-2 border-ink bg-sand shadow-pop">
+        <div className="relative min-h-72 overflow-hidden rounded-3xl border-2 border-ink bg-sand shadow-pop">
+          {/* shows through if the map can't load (offline, blocked, slow) */}
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(cafe.mapQuery)}`}
+            target="_blank"
+            rel="noreferrer"
+            className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-6 text-center"
+          >
+            <span className="grid size-14 place-items-center rounded-full border-2 border-ink bg-berry text-cream shadow-pop-sm"><MapPin size={26} /></span>
+            <span className="font-display text-2xl font-black">Open in Google Maps</span>
+            <span className="font-bold text-ink/65">{cafe.address}</span>
+          </a>
           <iframe
             title={`Map showing ${cafe.name}`}
             src={`https://www.google.com/maps?q=${encodeURIComponent(cafe.mapQuery)}&output=embed`}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="h-full min-h-72 w-full"
+            className="relative h-full min-h-72 w-full"
           />
         </div>
       </div>

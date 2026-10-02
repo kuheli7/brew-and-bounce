@@ -1,6 +1,31 @@
 # Brew & Bounce: café website + ordering demo
 
-Link: https://brew-and-bounce.vercel.app/
+**Live demo:** https://brew-and-bounce.vercel.app/
+
+> **Big coffee. Bigger moods.** A playful, mobile-first café website with a full menu and a demo ordering flow that hands the order to the shop on WhatsApp.
+
+## Screenshots
+
+### Phone
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/m-home.jpg" width="260" alt="Home page on a phone"><br><sub><b>Home</b></sub></td>
+    <td align="center"><img src="docs/screenshots/m-menu.jpg" width="260" alt="Menu page on a phone"><br><sub><b>Menu</b></sub></td>
+    <td align="center"><img src="docs/screenshots/m-order.jpg" width="260" alt="Order page on a phone"><br><sub><b>Your order</b></sub></td>
+  </tr>
+</table>
+
+### Desktop
+
+<img src="docs/screenshots/d-home.jpg" width="900" alt="Home page on desktop">
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/d-menu.jpg" width="440" alt="Menu page on desktop"><br><sub><b>Menu</b></sub></td>
+    <td align="center"><img src="docs/screenshots/d-order.jpg" width="440" alt="Order page on desktop"><br><sub><b>Your order</b></sub></td>
+  </tr>
+</table>
 
 A mobile-first café site (works on desktop too): hero, menu with filters and search, cart, order page, WhatsApp order hand-off,
 vibe, reviews, opening hours with a live "Open now", and a map. React 19 + Vite + Tailwind CSS 4. No backend, so it hosts for free.

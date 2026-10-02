@@ -15,8 +15,8 @@ export const cafe = {
   demoMode: true,
   demoBanner: 'Demo website · menu, prices and orders are for show',
 
-  phone: '+919999999999', // Call button
-  whatsapp: '919999999999', // country code + number, no "+" or spaces
+  phone: '+919933669860', // Call button
+  whatsapp: '919933669860', // country code + number, no "+" or spaces
   whatsappOrders: true, // "Send on WhatsApp" button: opens the guest's WhatsApp with the order typed out
   instagram: 'brewandbounce.demo',
 
