@@ -1,8 +1,38 @@
-# Brew & Bounce: café website + ordering demo
+<div align="center">
 
-**Live demo:** https://brew-and-bounce.vercel.app/
+# Brew & Bounce.
 
-> **Big coffee. Bigger moods.** A playful, mobile-first café website with a full menu and a demo ordering flow that hands the order to the shop on WhatsApp.
+**Big coffee. Bigger moods.**
+
+A playful, mobile-first café website with a full menu and a demo ordering flow that hands the order to the shop on WhatsApp.
+
+[![Live demo](https://img.shields.io/badge/Live_demo-brew--and--bounce.vercel.app-ee5d6c?style=for-the-badge&logo=vercel&logoColor=white)](https://brew-and-bounce.vercel.app/)
+
+![React](https://img.shields.io/badge/React_19-2a1b12?logo=react&logoColor=61dafb)
+![Vite](https://img.shields.io/badge/Vite-2a1b12?logo=vite&logoColor=ffd62e)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-2a1b12?logo=tailwindcss&logoColor=38bdf8)
+![No backend](https://img.shields.io/badge/No_backend-free_to_host-f2c84b?labelColor=2a1b12)
+![Mobile first](https://img.shields.io/badge/Mobile_first-yes-3fb8a8?labelColor=2a1b12)
+
+[**Live demo**](https://brew-and-bounce.vercel.app/) · [Screenshots](#screenshots) · [Features](#features) · [Run it](#run) · [Reuse for another shop](#reuse-for-another-shop-about-an-hour)
+
+</div>
+
+---
+
+## About
+
+A demo café site built to show local shops what a modern website with online ordering could look like for them. Everything runs in the browser, so there is no server to pay for.
+The look comes from the Brew & Bounce mock (cream, espresso, berry, citrus, teal and grape; Fraunces + Nunito; chunky offset shadows), and the order flow borrows ideas from delivery apps.
+
+## Features
+
+- **Menu:** 28 items in ₹ across 5 categories, with search, veg / egg / non-veg filters, bestseller and discount tags, and a detail sheet for each item
+- **Cart and order:** floating cart bar, dine-in table picker or takeaway, notes, "you might also like", coupons, 5% GST breakdown
+- **WhatsApp hand-off:** *Place order* opens WhatsApp to the shop with the whole order typed out; the guest just presses Send
+- **A café with personality:** hangout vibe section, reviews, live "Open now" from the opening hours, map with an "Open in Google Maps" fallback
+- **Mobile first:** works on phones, tablets and desktop, respects reduced-motion, keyboard friendly
+- **Easy to reuse:** one config file, one menu file, one set of colour tokens
 
 ## Screenshots
 
@@ -27,12 +57,6 @@
     <td align="center"><img src="docs/screenshots/d-order.jpg" width="440" alt="Order page on desktop"><br><sub><b>Your order</b></sub></td>
   </tr>
 </table>
-
-A mobile-first café site (works on desktop too): hero, menu with filters and search, cart, order page, WhatsApp order hand-off,
-vibe, reviews, opening hours with a live "Open now", and a map. React 19 + Vite + Tailwind CSS 4. No backend, so it hosts for free.
-
-Look and feel come from the Brew & Bounce mock (cream / espresso / berry / citrus / teal / grape, Fraunces + Nunito, hard offset shadows).
-The order page borrows its structure from a delivery-style menu: floating cart bar, veg / egg / non-veg marks, offers, coupon, tax breakdown.
 
 ## Run
 
