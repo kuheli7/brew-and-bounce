@@ -1,5 +1,7 @@
 # Brew & Bounce: café website + ordering demo
 
+Link: https://brew-and-bounce.vercel.app/
+
 A mobile-first café site (works on desktop too): hero, menu with filters and search, cart, order page, WhatsApp order hand-off,
 vibe, reviews, opening hours with a live "Open now", and a map. React 19 + Vite + Tailwind CSS 4. No backend, so it hosts for free.
 
