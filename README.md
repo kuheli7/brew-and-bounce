@@ -1,22 +1,12 @@
-<div align="center">
+# Brew & Bounce: café website + ordering demo
 
-# Brew & Bounce.
+A mobile-first website for a playful café in Bengaluru. Customers browse the menu, add drinks and bites to their order, and send it to the café on **WhatsApp**. No backend, no database and no monthly cost.
 
-**Big coffee. Bigger moods.**
+> **Design preview.** Brew & Bounce is a fictional brand. The café name, address, phone number, reviews and rating are placeholders, made to show a local café what its own site could look like.
 
-A playful, mobile-first café website with a full menu and a demo ordering flow that hands the order to the shop on WhatsApp.
+### 🔗 Live demo: [brew-and-bounce.vercel.app](https://brew-and-bounce.vercel.app/)
 
-[![Live demo](https://img.shields.io/badge/Live_demo-brew--and--bounce.vercel.app-ee5d6c?style=for-the-badge&logo=vercel&logoColor=white)](https://brew-and-bounce.vercel.app/)
-
-![React](https://img.shields.io/badge/React_19-2a1b12?logo=react&logoColor=61dafb)
-![Vite](https://img.shields.io/badge/Vite-2a1b12?logo=vite&logoColor=ffd62e)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-2a1b12?logo=tailwindcss&logoColor=38bdf8)
-![No backend](https://img.shields.io/badge/No_backend-free_to_host-f2c84b?labelColor=2a1b12)
-![Mobile first](https://img.shields.io/badge/Mobile_first-yes-3fb8a8?labelColor=2a1b12)
-
-[**Live demo**](https://brew-and-bounce.vercel.app/) · [Screenshots](#screenshots) · [Features](#features) · [Run it](#run) · [Reuse for another shop](#reuse-for-another-shop-about-an-hour)
-
-</div>
+Best viewed on a phone, but it works on desktop too.
 
 ---
 
